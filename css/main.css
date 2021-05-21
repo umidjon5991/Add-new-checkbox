@@ -1,0 +1,78 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.form {
+  width: 500px;
+  margin: 0 auto;
+}
+.form__label {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form__check-input {
+  appearance: none;
+}
+.form__check-input:focus + .control {
+  box-shadow: 0 0 1px 2px #000;
+}
+
+.control {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.form__check-text {
+  display: block;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.form__check-input:disabled:checked + .control {
+  opacity: 0.3;
+}
+
+.form__check-input:disabled:checked + .control + .form__check-text {
+  opacity: 0.3;
+}
+
+.form__check-input:checked + .form__check-control-tennis {
+  background-image: url(../images/table-tennis.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.form__check-input:checked + .form__check-control-bascetbol {
+  background-image: url(../images/basketball-ball.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.form__check-input:checked + .form__check-control-voleybol {
+  background-image: url(../images/volleyball-ball.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.form__check-input:checked + .form__check-control-hokkey {
+  background-image: url(../images/hockey-puck.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
